@@ -13,7 +13,7 @@ Line 1: [Drone #1 Name], [#1 Maximum Weight], [Drone #2 Name], [#2 Maximum Weigh
 Line 2: [Location #1 Name], [Location #1 Package Weight]
 Line 3: [Location #2 Name], [Location #2 Package Weight]
 Line 4: [Location #3 Name], [Location #3 Package Weight]
-Etc.
+
 ###Expected Output
 
 [Drone #1 Name]
@@ -29,11 +29,9 @@ Trip #2
 [Location #5 Name], [Location #6 Name]
 
 
-
 ###Comments
 
 Algorithm:
-
 1.Parse the input file to create a list of drones and a list of locations.
 2.While there are still drones and locations left, loop through each drone and create a dictionary with the drone and a list of scheduled trips.
 3.Get the scheduled trips for the current drone by calling getScheduledTripsForDrone() with the drone and the schedule list.
